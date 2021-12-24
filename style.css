@@ -1,0 +1,40 @@
+* {
+
+box-sizing: border-box; 
+margin: 0;
+padding: 0; 
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(41, 40, 40);
+    height: 10vh;
+    margin-bottom: 10vh;
+
+}
+
+.functionality {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+   
+
+}
+
+.settings {
+    width: 200px;
+    height: 400px;
+    background-color: black;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: rebeccapurple;
+}
