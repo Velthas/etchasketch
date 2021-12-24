@@ -37,4 +37,11 @@ padding: 0;
     width: 500px;
     height: 500px;
     background-color: rebeccapurple;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: stretch;
+}
+
+.canvasDiv {
+    display: inline-block;
 }
