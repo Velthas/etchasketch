@@ -26,9 +26,30 @@ function createCanvasDivs (numberOfDivs) {
 
 //Function to clear the canvas before replacing it
 function clearCanvas() {
+    //Get all the canvas blocks
     const canvasNodes = document.querySelectorAll('.canvasDiv');
 
+    //Loop and delete each one
     canvasNodes.forEach(canvasBlock => {
         canvasBlock.remove();
     });
 }
+
+function colorCanvas (color) {
+    const canvasNodes = document.querySelectorAll('.canvasDiv');
+
+    canvasNodes.forEach(canvasBlock =>  {
+        canvasBlock.addEventListener('mouseenter', function () { canvasBlock.style.backgroundColor = color; })
+    });
+}
+
+//Get the range slider and the text-content node above it.
+const sliderText = document.querySelector('.slidertext');
+const rangeSlider = document.querySelector('#slidervalue');
+
+//Each time the range is changed, clear the canvas, create new divs and update text-content
+rangeSlider.addEventListener('change', () => { 
+    clearCanvas();
+    createCanvasDivs(Number(rangeSlider.value));
+    sliderText.textContent = rangeSlider.value + 'x' + rangeSlider.value; })
+

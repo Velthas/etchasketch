@@ -2,14 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <script src="./script.js"></script>
+        <script src="./script.js" defer></script>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div class="title"><h1 style="text-align: center;">Etch a Sketch</h1></div>
         <div class="functionality">
             <div class="settings">
-
+                <input type="color" id="color" name="color"
+                value="#fea0c4">
+                <button id="standard" class="active">Color</button>
+                <button id="rainbow">Rainbow</button>
+                <button id="greyshade">Greyshade</button>
+                <span>
+                    <div class="slidertext">16x16</div>
+                    <input type="range" min="1" max="100" value="16" class="slider" id="slidervalue">
+                </span>
             </div>
             <div class="container">
 

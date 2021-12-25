@@ -1,9 +1,8 @@
 * {
-
+background-color: #f7f7f7;
 box-sizing: border-box; 
 margin: 0;
 padding: 0; 
-
 }
 
 .title {
@@ -30,18 +29,74 @@ padding: 0;
 .settings {
     width: 200px;
     height: 400px;
-    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .container {
     width: 500px;
     height: 500px;
-    background-color: rebeccapurple;
+    background-color: #f7f7f7;
     display: flex;
     flex-wrap: wrap;
     justify-items: stretch;
+    box-shadow: 0 0 12px 0 #817575;
 }
 
-.canvasDiv {
-    display: inline-block;
+button {
+    width: 200px;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 15px;
+    transition: transform ease-in 0.3s, border ease-in 0.3s;
+}
+
+button:hover {
+    background-color: gainsboro;
+}
+
+.active {
+    transform: scale(1.1);
+    background-color: #fea0c4;
+    color: white;
+    border: 0.5px solid rgb(78, 23, 69);
+
+}
+
+input#color {
+        border: transparent;
+        height: 50px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 196px;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none; 
+  }
+
+ .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #fea0c4;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.slidertext { 
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
 }
