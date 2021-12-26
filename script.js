@@ -49,6 +49,26 @@ greyshadeButton.addEventListener('click', () => {
     toggleButton(greyshadeButton);
     colorCanvas('greyshade');
 })
+
+//To avoid formatting issues, listen for media queries and recreate canvas
+//This list is an object with several properties.
+//Media query list returns a property of matches: true if the specified media query is satisfied
+//When the screen is big = matches: false
+const mediaQueryList = window.matchMedia('(max-width: 765px)');
+
+
+//If matches is true, meaning the screen is small, readjust it. When it isn't true, thus the screen is bigger, readjust it aswell.
+function checkScreenSize (e) {
+    if (e.matches) {
+        clearCanvas();    
+    }
+    else {
+        clearCanvas();
+    }
+}
+
+//Add the event listener to fire when a change occurs
+mediaQueryList.addEventListener('change', checkScreenSize);
  
 //Handle which button is pressed
 function toggleButton(node) {

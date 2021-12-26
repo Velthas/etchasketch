@@ -14,6 +14,7 @@ padding: 0;
     height: 10vh;
     margin-bottom: 10vh;
     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
 
 }
 
@@ -105,3 +106,54 @@ input#color {
     text-align: center;
     margin: 10px;
 }
+
+@media (max-width: 765px) {
+    .title {
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .container {
+      width: 350px;
+      height: 350px;
+    }
+
+    .settings {
+        width: 150px;
+        height: 350px;
+    }
+
+    button {
+        width: 125px;
+        padding: 10px;
+    }
+
+    .slider {
+        width: 120px;
+    }
+  }
+
+  @media (max-width: 565px) {
+
+    .functionality {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+    .container {
+      width: 350px;
+      height: 350px;
+    }
+
+    .settings {
+        width: 150px;
+        height: 400px;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .slider {
+        width: 150px;
+    }
+  }
