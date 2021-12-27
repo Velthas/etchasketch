@@ -13,7 +13,7 @@ padding: 0;
     color: rgb(41, 40, 40);
     height: 10vh;
     margin-bottom: 10vh;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', Georgia, serif;
     letter-spacing: 5px;
 
 }
@@ -53,6 +53,7 @@ button {
     font-size: 20px;
     border-radius: 15px;
     transition: transform ease-in 0.3s, border ease-in 0.3s;
+    border: 1px solid black;
     cursor: pointer;
 }
 
@@ -97,7 +98,8 @@ input#color {
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: #04AA6D;
+    border-radius: 20px;
+    background: #fea0c4;
     cursor: pointer;
 }
 
