@@ -159,3 +159,21 @@ input#color {
         width: 150px;
     }
   }
+
+  .credits {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4vh;;
+      font-size: 18px;
+  }
+
+  a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(41, 40, 40);
+  }
+
+  a:hover {
+      color: #fea0c4;
+  }
